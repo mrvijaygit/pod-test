@@ -6,8 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B135BD032D8D662A00BF862D /* EztoVerify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B135BD022D8D662A00BF862D /* EztoVerify.xcframework */; };
+		B135BD042D8D662A00BF862D /* EztoVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B135BD022D8D662A00BF862D /* EztoVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B135BD072D8D664F00BF862D /* EztoVerifyCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B135BD062D8D664F00BF862D /* EztoVerifyCore.xcframework */; };
+		B135BD082D8D664F00BF862D /* EztoVerifyCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B135BD062D8D664F00BF862D /* EztoVerifyCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B135BD052D8D662A00BF862D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B135BD042D8D662A00BF862D /* EztoVerify.xcframework in Embed Frameworks */,
+				B135BD082D8D664F00BF862D /* EztoVerifyCore.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B135BCEC2D8D630200BF862D /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B135BCFE2D8D661200BF862D /* EztoVerify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EztoVerify.framework; path = ../eztoverify_ios_sdk_6.0.3_bundles/EztoVerify.framework; sourceTree = "<group>"; };
+		B135BD022D8D662A00BF862D /* EztoVerify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EztoVerify.xcframework; path = "../../ezto-verify-native/qlikverify_authenticator_sdk_ios/qlikverify-sdk/output/Release/EztoVerify.xcframework"; sourceTree = "<group>"; };
+		B135BD062D8D664F00BF862D /* EztoVerifyCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EztoVerifyCore.xcframework; path = ../eztoverify_ios_sdk_6.0.3_bundles/EztoVerifyCore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B135BD032D8D662A00BF862D /* EztoVerify.xcframework in Frameworks */,
+				B135BD072D8D664F00BF862D /* EztoVerifyCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B135BCEE2D8D630200BF862D /* test */,
+				B135BCFD2D8D661200BF862D /* Frameworks */,
 				B135BCED2D8D630200BF862D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +73,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B135BCFD2D8D661200BF862D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B135BD062D8D664F00BF862D /* EztoVerifyCore.xcframework */,
+				B135BD022D8D662A00BF862D /* EztoVerify.xcframework */,
+				B135BCFE2D8D661200BF862D /* EztoVerify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -55,6 +93,7 @@
 				B135BCE82D8D630200BF862D /* Sources */,
 				B135BCE92D8D630200BF862D /* Frameworks */,
 				B135BCEA2D8D630200BF862D /* Resources */,
+				B135BD052D8D662A00BF862D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
